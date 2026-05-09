@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+:root {
+  --bg: #060a12;
+  --surface: #0c1220;
+  --surface2: #111827;
+  --surface3: #1a2236;
+  --border: rgba(56,189,248,0.12);
+  --border-bright: rgba(56,189,248,0.28);
+  --accent: #38bdf8;
+  --accent2: #818cf8;
+  --accent3: #34d399;
+  --gold: #fbbf24;
+  --danger: #f87171;
+  --warn: #fb923c;
+  --text: #e2e8f0;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif !important;
+  background: #060a12 !important;
+  color: #e2e8f0 !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  background: #060a12;
+  color: #e2e8f0;
+}
+
+/* Force all text to be visible */
+p, span, div, td, th, label, h1, h2, h3, h4, h5, h6, a, button, input, select, option {
+  color: inherit;
+}
+
+input, select, option, button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #0c1220; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #38bdf8, #818cf8); border-radius: 4px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.fade-up { animation: fadeUp 0.45s ease forwards; }
+.fade-in { animation: fadeIn 0.3s ease forwards; }
